@@ -11,6 +11,7 @@
 		A705D5C02B0BA73B00554D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A705D5BF2B0BA73B00554D4C /* ViewController.swift */; };
 		A705D5C52B0BA73C00554D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A705D5C42B0BA73C00554D4C /* Assets.xcassets */; };
 		A705D5C82B0BA73C00554D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A705D5C62B0BA73C00554D4C /* LaunchScreen.storyboard */; };
+		A705D5D12B0BAB6200554D4C /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = A705D5D02B0BAB6200554D4C /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A705D5D12B0BAB6200554D4C /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +79,9 @@
 			dependencies = (
 			);
 			name = Playground;
+			packageProductDependencies = (
+				A705D5D02B0BAB6200554D4C /* PinLayout */,
+			);
 			productName = Playground;
 			productReference = A705D5B82B0BA73B00554D4C /* Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = A705D5AF2B0BA73B00554D4C;
+			packageReferences = (
+				A705D5CF2B0BAB6200554D4C /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = A705D5B92B0BA73B00554D4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A705D5CF2B0BAB6200554D4C /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openbakery/PinLayout/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A705D5D02B0BAB6200554D4C /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A705D5CF2B0BAB6200554D4C /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A705D5B02B0BA73B00554D4C /* Project object */;
 }

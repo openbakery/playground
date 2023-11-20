@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "pinlayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/openbakery/PinLayout/",
+      "state" : {
+        "branch" : "main",
+        "revision" : "622d1a8b2b7f079118772d3e7c21fea37c3adf40"
+      }
+    }
+  ],
+  "version" : 2
+}
